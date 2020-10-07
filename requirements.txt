@@ -1,0 +1,11 @@
+fire==0.3.1
+boto3==1.15.6
+requests==2.21.0
+streamlit==0.67.1
+tqdm==4.31.1
+awesome_streamlit==20200728.1
+tensorflow==1.14.0
+regex==2017.4.5
+numpy==1.19.2
+tweepy==3.9.0
+Pillow==7.2.0
