@@ -1,0 +1,2 @@
+The iOS SDK (Software Development Kit) (formerly iPhone SDK) is a software development kit developed by Apple Inc. The kit allows for the development of mobile apps on Apple's iOS operating system.
+Combined with Xcode, the iOS SDK helps developers write iOS apps using officially supported programming languages, including Swift and Objective-C

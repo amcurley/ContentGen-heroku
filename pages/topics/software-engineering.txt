@@ -1,0 +1,3 @@
+Software engineering is the systematic application of engineering approaches to the development of software. Software engineering is a computing discipline.
+
+Software development, the main activity of software construction. is the combination of programming (aka coding), verification, software testing, and debugging. A Software development process is the definition, implementation, assessment, measurement, management, change, and improvement of the software life cycle process itself. It heavily uses Software configuration management which is about systematically controlling changes to the configuration, and maintaining the integrity and traceability of the configuration and code throughout the system life cycle. Modern processes use software versioning.
