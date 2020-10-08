@@ -49,7 +49,7 @@ def gen():
         st.image(image, use_column_width=True)
 
     st.title('DeepFake Demo')
-    st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
+    st.markdown("![Alt Text](https://media.giphy.com/media/oXhfoaXQXAozUJat25/giphy.gif)")
 
 
 
