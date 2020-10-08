@@ -18,8 +18,8 @@ def home_app():
     This application provides:
     - A section called **FaceGen** where you can view computer generated people.
     - A section called **BlogGen** where a user can generate an infinite amount of blogs.
-    - A gallery of some of the best generated blog posts from **BlogGen**
-    
+    - A gallery of some of the best generated blog posts from **BlogGen**.
+
     If you have any questions feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/aidancurley/). Enjoy!
 
     """)

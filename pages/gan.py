@@ -34,12 +34,16 @@ def gen():
     st.title('Person Generation')
     st.markdown('These faces were pre generated in a [Google Colab](https://github.com/amcurley/test-heroku/blob/master/StyleGAN2_faces.ipynb) notebook due to computing contraints.')
     # st.markdown('')
-    st.markdown("Click Generate to Get Your Face!")
+    st.markdown("Click **generate** to generate a face!")
     if st.button('Generate'):
         st.image(image, use_column_width=True)
 
         st.title('Latent Walk')
+        st.markdown('This is an example of interpolation through the latent space of the GAN')
         st.markdown("![Alt Text](https://media.giphy.com/media/oXhfoaXQXAozUJat25/giphy.gif)")
+
+        st.title('DeepFake')
+        st.markdown('')
 
 def write():
     """Method used to bring page into the app.py file"""
