@@ -14,12 +14,6 @@ s3 = boto3.resource(
     service_name = 's3',
     region_name = 'us-east-2',
 
-    # DO NOT PUSH TO GITHUB WITHOUT REMOVING THESE FIRST
-    # aws_access_key_id = AWS_ACCESS_KEY_ID,
-    # aws_secret_access_key = AWS_SECRET_ACCESS_KEY
-    # DO NOT PUSH TO GITHUB WITHOUT REMOVING THESE FIRST
-
-
 )
 
 def image_from_s3(bucket, key):
@@ -31,28 +25,21 @@ def image_from_s3(bucket, key):
     return Image.open(io.BytesIO(img_data))
 
 def gen():
-    # folder = r'/Users/aidancurley/Documents/dsir/personal/ContentGen/faces'
-    #
-    # a = random.choice(os.listdir(folder))
-    #
-    # file = folder + "/" + a #File to selected image
-    #
-    # image = Image.open(file)
+
     nums = random.randint(1, 4)
     image = image_from_s3('images-contentgen', f'seed{nums}.png')
 
     file = s3.Bucket('images-contentgen').download_file(f'seed{nums}.png', f'seed{nums}.png')
 
     st.title('Person Generation')
+    st.markdown('These faces were pre generated in a [Google Colab](https://github.com/amcurley/test-heroku/blob/master/StyleGAN2_faces.ipynb) notebook due to computing contraints.')
+    # st.markdown('')
     st.markdown("Click Generate to Get Your Face!")
     if st.button('Generate'):
         st.image(image, use_column_width=True)
 
-    st.title('DeepFake Demo')
-    st.markdown("![Alt Text](https://media.giphy.com/media/oXhfoaXQXAozUJat25/giphy.gif)")
-
-
-
+        st.title('Latent Walk')
+        st.markdown("![Alt Text](https://media.giphy.com/media/oXhfoaXQXAozUJat25/giphy.gif)")
 
 def write():
     """Method used to bring page into the app.py file"""
