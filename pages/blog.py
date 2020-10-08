@@ -1,6 +1,6 @@
 import os
 
-os.system(python gpt.download_model.py 124M)
+os.system('python gpt.download_model.py 124M')
 
 import streamlit as st
 import awesome_streamlit as ast
