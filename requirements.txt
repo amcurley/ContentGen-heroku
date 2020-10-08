@@ -5,7 +5,6 @@ argon2-cffi==20.1.0
 astor==0.8.1
 async-generator==1.10
 attrs==20.2.0
-awesome-streamlit==20200728.1
 backcall==0.2.0
 base58==2.0.1
 bleach==3.2.1
