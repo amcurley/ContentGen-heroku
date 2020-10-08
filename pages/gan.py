@@ -15,8 +15,8 @@ s3 = boto3.resource(
     region_name = 'us-east-2',
 
     # DO NOT PUSH TO GITHUB WITHOUT REMOVING THESE FIRST
-    # aws_access_key_id = AWS_ACCESS_KEY_ID,
-    # aws_secret_access_key = AWS_SECRET_ACCESS_KEY
+    aws_access_key_id = AWS_ACCESS_KEY_ID,
+    aws_secret_access_key = AWS_SECRET_ACCESS_KEY
     # DO NOT PUSH TO GITHUB WITHOUT REMOVING THESE FIRST
 
 
