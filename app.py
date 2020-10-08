@@ -13,7 +13,7 @@ import gpt.src.model as model
 import gpt.src.sample as sample
 import pages.gan
 import pages.home
-import pages.text
+# import pages.text
 import pages.blog
 import pages.best_generated
 
@@ -22,7 +22,7 @@ def main():
     PAGES = {
         'Home': pages.home,
         'PersonGen': pages.gan,
-        'GPT-2': pages.text,
+        # 'GPT-2': pages.text,
         "BlogGen": pages.blog,
         'The Best Generated Blog Posts': pages.best_generated
     }
