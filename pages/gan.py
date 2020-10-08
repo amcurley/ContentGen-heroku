@@ -38,7 +38,7 @@ def gen():
     # file = folder + "/" + a #File to selected image
     #
     # image = Image.open(file)
-    nums = random.randint(1, 5)
+    nums = random.randint(1, 4)
     image = image_from_s3('images-contentgen', f'seed{nums}.png')
 
     file = s3.Bucket('images-contentgen').download_file(f'seed{nums}.png', f'seed{nums}.png')
