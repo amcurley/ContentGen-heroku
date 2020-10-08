@@ -3,7 +3,7 @@ boto3==1.15.6
 requests==2.21.0
 streamlit==0.67.1
 tqdm==4.31.1
-awesome-streamlit==20191014.2
+awesome-streamlit==20200728.1
 tensorflow==1.14.0
 regex==2017.4.5
 numpy==1.19.2
