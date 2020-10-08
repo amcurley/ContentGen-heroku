@@ -38,7 +38,7 @@ def gen():
     # file = folder + "/" + a #File to selected image
     #
     # image = Image.open(file)
-    nums = random.randint(1, 4)
+    nums = random.randint(1, 5)
     image = image_from_s3('images-contentgen', f'seed{nums}.png')
 
     file = s3.Bucket('images-contentgen').download_file(f'seed{nums}.png', f'seed{nums}.png')
@@ -47,6 +47,11 @@ def gen():
     st.markdown("Click Generate to Get Your Face!")
     if st.button('Generate'):
         st.image(image, use_column_width=True)
+
+    st.title('DeepFake Demo')
+    st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
+
+
 
 
 def write():
