@@ -1,6 +1,6 @@
 # **Project ContentGen**
 
-### Problem Statement:
+### **Problem Statement**
 
 According to HubSpot companies spend 46% of their budget on content creation (HubSpot, 2017) and 24% of marketers plan on increasing their investment in content marketing in 2020 (HubSpot, 2020). Content creation is obviously a very important aspect of the overall marketing plan for company. There are usually a lot of moving pieces that go into creating an effective content marketing plan such as photographers, editors, videographers, models, writers, etc. 
 
@@ -11,14 +11,24 @@ This leads us to our problem:
 - Is it ethical to use this technology for content generation?
 
 
-### Project Layout
+### **Project Layout**
 
-Web application:  
+**Caution:** This webapp does show photorealistic images of people and has links to the full access of over 15,000 images of computer generated people. Before using this application consider using this application only for knowledge and brining awareness to the ethical concers of using this technology.  
+
+**Web application:**  
 https://test-heroku-content.herokuapp.com/  
 
-Project flow and installation
+This project was broken into two pieces:   
 
-### Executive Summary
+1. The first part of the project uses [StyleGan2](https://github.com/amcurley/test-heroku/blob/master/people/StyleGan2_ContentGen.ipynb) for face generation and [DeepFakes](https://github.com/amcurley/test-heroku/blob/master/people/deep_fakes.ipynb) for moving these images. 
+
+2. The second part of the project uses [GPT-2](https://github.com/amcurley/test-heroku/tree/master/gpt) for blog post generation.
+
+Examples of both of these parts of the project can be viewed on the webapp listed above.
+
+
+
+### **Executive Summary**
 
 This project began with the goal of creating computer generated content. This could be a successful service that companies can utlize in their content marketing efforts. The first aspect of this project focuses on influencer marketing. Influencer marketing is a huge asset for companies, however it can become fairly expensive as the quality of the influencer increases (number of followers and engagement rate). Using computer generated influencers, companies can in theory "deploy" thousands of these influencers to promote their products and services. The second aspect of this project is focused on utlizing computer generated blog posts for content marketing. According to Hubspot "About 64% of marketers actively invest time in search engine optimization (SEO)(HubSpot, 2020)." With computer generated blog posts marketers can cut down the time it takes to make quality blog posts at scale. 
 
@@ -27,7 +37,7 @@ Generating a large amount of fake images was possible due to the use of GANs. Th
 ![image](./assets/deep-fake-gan.gif "GAN")
 
 
-Using the computer generated images from the application and the notebook [deep_fakes.ipynb](https://github.com/amcurley/ContentGen/blob/master/deep_fakes.ipynb), a company can upload a video of a person talking and can make the generated person move like the person in the video
+Using the computer generated images from the application and the notebook [deep_fakes.ipynb](https://github.com/amcurley/test-heroku/blob/master/people/deep_fakes.ipynb), a company can upload a video of a person talking and can make the generated person move like the person in the video
 
 The second part of the application only requires the user/business to go onto to the application and go to the "BlogGen" section in the navigation bar. The user will select or topic and write a title for the blog post. If a user does not choose a topic and only write a topic the generator will still be able to generate a body of text that the person can then use for their own blog. For this part of the project I utilized [GPT-2](https://github.com/openai/gpt-2) for the text generation. The topics that a user can select are all of the topics available on [Medium](https://medium.com/topics). For each of these topics I used a 3-4 sentence primer about this topic that I got from Wikipedia and other website, so my generator can develop more coherent blogs about that specific topic and title.
 
@@ -37,12 +47,14 @@ Computer generated blog posts take away from the creative beauty of writing. Thi
 
 When using these applications it is important to take into account the above paragraphs.
 
-### Creating the Computer Generated Influncer:
-There will be two parts of this project. The first part will be the computer generated influencer. I will be utilizing [StyleGan2](https://github.com/NVlabs/stylegan2) from NVIDIA. 
+### **Data**
 
+For StyleGan2 I used the [ffhq-dataset](https://github.com/NVlabs/ffhq-dataset) due to the data already being prepared and localized properly. I attemped to train StyleGan2 on data that I collected from Instagram influencers to generate bodies however the data was not properly localized. This was due to time contraints. Having a perfect dataset for this application is essential because the metrics we care about are if the image is distinguishable from an actual human.
 
-### Creating the Blog Post Generator:
-Onto the second part of the project. This section of the project will enable a user of my application to pick a topic out of any of the topics available on Medium and my application will generate a 300 word body of text that they can use.
+For GPT-2 I used the 124M paramater model due to computing contraints. When a user on my web application clicks one of the pre determined topics it will prime GPT-2 with a snippet of text about that topic. The data I used to prime GPT-2 can be seen here: [Topics](https://github.com/amcurley/test-heroku/tree/master/pages/topics)
 
-### Sources
-[HubSpot Content Marketing Statistics](https://www.hubspot.com/marketing-statistics)
+### **Sources**
+[HubSpot Content Marketing Statistics](https://www.hubspot.com/marketing-statistics)  
+[StyleGan2](https://github.com/NVlabs/stylegan2)  
+[GPT-2](https://github.com/openai/gpt-2)  
+[GPT-2 Primers](https://github.com/amcurley/test-heroku/blob/master/citations.txt)  
