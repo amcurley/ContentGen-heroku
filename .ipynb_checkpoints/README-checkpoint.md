@@ -13,6 +13,9 @@ This leads us to our problem:
 
 ### Project Layout
 
+Web application:  
+https://test-heroku-content.herokuapp.com/  
+
 Project flow and installation
 
 ### Executive Summary
@@ -24,7 +27,7 @@ Generating a large amount of fake images was possible due to the use of GANs. Th
 ![image](./assets/deep-fake-gan.gif "GAN")
 
 
-Using the computer generated images from the application the and notebook [deep_fakes.ipynb](https://github.com/amcurley/ContentGen/blob/master/deep_fakes.ipynb), a company can upload a video of a person talking and can make the generated person move like the person in the video
+Using the computer generated images from the application and the notebook [deep_fakes.ipynb](https://github.com/amcurley/ContentGen/blob/master/deep_fakes.ipynb), a company can upload a video of a person talking and can make the generated person move like the person in the video
 
 The second part of the application only requires the user/business to go onto to the application and go to the "BlogGen" section in the navigation bar. The user will select or topic and write a title for the blog post. If a user does not choose a topic and only write a topic the generator will still be able to generate a body of text that the person can then use for their own blog. For this part of the project I utilized [GPT-2](https://github.com/openai/gpt-2) for the text generation. The topics that a user can select are all of the topics available on [Medium](https://medium.com/topics). For each of these topics I used a 3-4 sentence primer about this topic that I got from Wikipedia and other website, so my generator can develop more coherent blogs about that specific topic and title.
 
