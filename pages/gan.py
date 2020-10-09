@@ -26,7 +26,7 @@ def image_from_s3(bucket, key):
 
 def gen():
 
-    nums = random.randint(1, 10)
+    nums = random.randint(1, 11)
     image = image_from_s3('images-contentgen', f'seeds{nums}.png')
 
     file = s3.Bucket('images-contentgen').download_file(f'seeds{nums}.png', f'seed{nums}.png')
