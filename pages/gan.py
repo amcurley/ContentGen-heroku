@@ -39,7 +39,7 @@ def gen():
         st.image(image, use_column_width=True)
 
         st.title('Latent Walk')
-        st.markdown('This is an example of interpolation through the latent space of the GAN')
+        st.markdown('This is an example of interpolation through the latent space of the GAN ')
         st.markdown("![Alt Text](https://media.giphy.com/media/oXhfoaXQXAozUJat25/giphy.gif)")
 
         st.title('DeepFake')
