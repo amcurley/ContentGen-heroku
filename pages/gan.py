@@ -26,10 +26,10 @@ def image_from_s3(bucket, key):
 
 def gen():
 
-    nums = random.randint(1, 4)
+    nums = random.randint(1, 10)
     image = image_from_s3('images-contentgen', f'seed{nums}.png')
 
-    file = s3.Bucket('images-contentgen').download_file(f'seed{nums}.png', f'seed{nums}.png')
+    file = s3.Bucket('images-contentgen').download_file(f'seeds{nums}.png', f'seed{nums}.png')
 
     st.title('Person Generation')
     st.markdown('These faces were pre generated in a [Google Colab](https://github.com/amcurley/test-heroku/blob/master/StyleGAN2_faces.ipynb) notebook due to computing contraints.')
