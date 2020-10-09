@@ -85,7 +85,7 @@ def interact_model(box_selection, input_text,
         #                 text = text + "."
         #                 st.markdown(text)
         #                 st.success("Nice Blog!")
-                        st.stop()
+        st.stop()
 
 # User text input function
 def text_input(text):
