@@ -43,9 +43,6 @@ def gen():
         st.markdown('This is an example of interpolation through the latent space of the GAN ')
         st.markdown("![Alt Text](https://media.giphy.com/media/oXhfoaXQXAozUJat25/giphy.gif)")
 
-        st.title('DeepFake')
-        st.markdown('')
-
 def write():
     """Method used to bring page into the app.py file"""
     with st.spinner("Loading ..."):
