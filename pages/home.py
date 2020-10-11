@@ -16,7 +16,7 @@ def home_app():
     I believe AI generated content has the potential to accelerate business success while simultaneously replacing a lot of jobs and potentially ruining the creative industry.
 
     This application provides:
-    - A section called **FaceGen** where you can view computer generated people.
+    - A section called **PersonGen** where you can view computer generated people.
     - A section called **BlogGen** where a user can generate an infinite amount of blogs.
     - A gallery of some of the best generated blog posts from **BlogGen**.
 
