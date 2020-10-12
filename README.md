@@ -47,6 +47,11 @@ Here is an example of myself moving the GAN generated images:
 #### **BlogGen**
 The second part of the application is called BlogGen. The user/business will go onto the application and go to the "BlogGen" section in the navigation bar. The user will select a topic and write a title for the blog post. If a user does not choose a topic and only writes a title the generator will still be able to generate a body of text that the person can then use for their own blog. For this part of the project I utilized [GPT-2](https://github.com/openai/gpt-2) for the text generation. The topics that a user can select are all of the topics available on [Medium](https://medium.com/topics). For each of these topics I used a 3-4 sentence primer about this topic that I got from Wikipedia and other websites, so my generator can develop more coherent blogs about that specific topic and title.
 
+Here is an example of BlogGen in action:  
+![image](./assets/bloggen.gif "GAN")
+
+
+
 ### **Ethics**
 
 After developing these pieces of the project I became very aware of the ethical concerns of using this technology for content generation. For people in technology and business this is a useful service that can accelerate their marketing efforts. However, the implementation of GANs and DeepFakes for content generation replaces a lot of jobs such as photographers, videographers, editors, and models. This technology can also allow a user to make people do and say whatever they please. Businesses can use this technology to exploit the flaws and addictive nature of social media more than they already are. Although GANs and DeepFakes are not physically hurting someone, the ethical concerns arise when taking into account job loss, deep fakes in politics, unrealistic standards for beauty, etc. 
