@@ -35,7 +35,7 @@ def gen():
     st.markdown('These faces were pre generated in a [Google Colab](https://github.com/amcurley/test-heroku/blob/master/StyleGAN2_faces.ipynb) notebook due to computing contraints.')
     st.markdown('Due to financial and computing constraints this will only generate the same 10 random images.')
     st.markdown('Here is a link to the folder of 15,000 fake faces: [Google Drive](https://drive.google.com/drive/folders/1g1206aLsGX-PZ65tGKNdAFKBmyVHTrae?usp=sharing)')
-    st.markdown("Click **generate** to generate a face!")
+    st.markdown("Click **Generate** to generate a face!")
     if st.button('Generate'):
         st.image(image, use_column_width=True)
 
